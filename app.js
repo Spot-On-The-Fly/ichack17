@@ -5,14 +5,14 @@ var spotifyAPI = require('spotify-web-api-node');
 var fs = require('jsonfile');
 var data = [];
 var TIME_BETWEEN_SONGS = 15000;
-var HOST_ID = "1123320565";
-var output_playlist = {"id": "5UnOPEtjdMUokmE3Y40WvY", "name": "spot-on-the-fly"}
+var HOST_ID = "<HOST_ID>";
+var output_playlist = {"id": "<PLAYLIST_ID>", "name": "<PLAYLIST_NAME>"}
 
 //main settings
 var settings = {
-  clientId : "cab4b5b99f96426e9dfaf76d268f3871",
-  clientSecret: "3000734987d6434a963489d900c65641",
-  redirectUri: "http%3A%2F%2F129.31.219.167%3A8080%2Fauth%2Fconfirm"
+  clientId : "<CLIENT_ID>",
+  clientSecret: "<CLIENT_SECRET>",
+  redirectUri: "<REDIRECT_URI>"
 };
 
 //set up spotifyapi
