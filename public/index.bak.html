@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Spot-On-The-Fly</title>
+
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <script>
+    var socket = io.connect("http://129.31.218.236/");
+    socket.on('news', function (data) {
+      console.log(data);
+      socket.emit('my other event', { my: 'data' });
+    });
+</script>
+</head>
+<body>
+
+  <h1>Heys</h1>
+
+</body>
+</html>
